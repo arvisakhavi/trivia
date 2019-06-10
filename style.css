@@ -1,0 +1,95 @@
+
+body{
+    font-family: Times serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+table{
+    border-collapse: collapse;
+    margin:auto;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    /*width: 100%;*/
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.container:hover .overlay {
+    opacity:.9;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container {
+    width: 40px;
+    height: 150px;
+    -webkit-transition: width 8s; /* Safari */
+    transition: width 2s;
+    border-radius: 50px 50px;
+    display: inline-block;
+}
+
+div:hover {
+    width: 300px;
+}
+
+button{
+    width: 135px;
+    height: 29px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#tableOne{
+    width: 600px;
+    height: 600px;
+    color: black;
+    /*display: none;*/
+}
+
+#answersTable {
+    width: 300px;
+    height: 300px;
+    color: black;
+    display: block;
+}
+
+#grade {
+    height:55px;
+    width:130px;
+    font-family: "sans-serif";
+}
+
+#grad1 {
+    height: 200px;
+}

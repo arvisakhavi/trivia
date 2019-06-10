@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+   <html lang="en">
+    <head>
+     <meta charset="UTF-8">
+     <title>Title</title>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="script.js"></script>
+     <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<h1> Trivia! </h1>
+
+<h4> click on a topic </h4>
+
+<div class="container" id = "film">
+ <a href="#" onclick="getElementById ('categoryNumber').value = 0"><img class="image" src="https://cdn2.iconfinder.com/data/icons/creative-icons-2/64/ACTION-512.png" height="150" width="150" align="left" alt="Film"/></a>
+ <div class="overlay">
+  <div class="text">Film</div>
+ </div>
+ <p></p>
+</div>
+
+<div class="container" id = "music">
+ <a href="#" onclick= "getElementById ('categoryNumber').value = 1"><img class="image" src="http://icons.iconarchive.com/icons/martz90/circle/256/music-icon.png" height="150" width="150" align="left" alt="Film"/></a>
+ <div class="overlay">
+  <div class="text">Music</div>
+ </div>
+ <p></p>
+</div>
+
+<div class="container" id = "science">
+ <a href="#" onclick="getElementById ('categoryNumber').value = 2"><img class="image" src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2/128/atom-circle-blue-512.png" height="150" width="150" align="left" alt="Film"/></a>
+ <div class="overlay">
+  <div class="text">Science</div>
+ </div>
+ <p></p>
+
+</div>
+<div class="container" id = "geography">
+ <a href="#" onclick="getElementById ('categoryNumber').value = 3"><img class="image" src="https://cdn0.iconfinder.com/data/icons/back-to-school/90/circle-school-learn-study-subject-geographic-512.png" height="150" width="150" align="left" alt="Film"/></a>
+ <div class="overlay">
+  <div class="text">Geography</div>
+ </div>
+ <p></p>
+</div>
+<input type="hidden" id = "categoryNumber">
+
+<br>
+<br>
+
+<select id = "numberOfQuestions" title = "number of questions"  style= "height:30px; width: 50px; font-size: 16px; font-family: Verdana sans-serif ">
+ <option value="5">5</option>
+ <option value="15">10</option>
+ <option value="10">15</option>
+</select>
+
+<select id = "level" title = "level"  style= "height:30px; width: 140px; font-size: 16px; font-family: Verdana sans-serif ">
+ <option value = "Select a level">Select a level</option>
+ <option value="easy">Easy</option>
+ <option value="medium">Intermediate</option>
+ <option value="hard">Difficult</option>
+</select>
+
+<select id = "typeOfQuestion" title = "type of question"  style= "height:30px; width: 140px; font-size: 16px; font-family: Verdana sans-serif ">
+ <option value = "Type of question">Type of question</option>
+ <option value="True or false">True or false</option>
+</select>
+
+<button onclick="search()">search</button>
+
+ <table id= "tableOne" style="display:none" align="center" cellpadding="10">
+  <tr>
+   <th>Questions</th>
+   <th>Answers</th>
+  </tr>
+ </table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<button id= "grade" onClick="finishAndGrade()">Finish and Grade</button>
+
+</body>
+</html>
+
+
